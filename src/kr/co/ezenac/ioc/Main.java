@@ -8,13 +8,13 @@ public class Main {
         String url = "www.google.com/books/it?page=100&name=springframework";
 
         //Base64 encoding
-        Encoder encoder = new Encoder();
+        IEncoder encoder = new Encoder();
         String result = encoder.encode(url);
         System.out.println(result);
 
 
         //url Encoding
-        UrlEncoder urlEncoder = new UrlEncoder();
+        IEncoder urlEncoder = new UrlEncoder();
         String urlResult = urlEncoder.encode(url);
 	    System.out.println(urlResult);
     }

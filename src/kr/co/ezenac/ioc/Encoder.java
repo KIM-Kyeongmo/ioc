@@ -6,9 +6,10 @@ public class Encoder {
 
     public Encoder() {
         this.iEncoder = new Base64Encoder();
+        //this.iEncoder = new UrlEncoder();
     }
 
-    public String Encoder(String message) {
+    public String encode(String message) {
         return iEncoder.encode(message);
     }
 }
